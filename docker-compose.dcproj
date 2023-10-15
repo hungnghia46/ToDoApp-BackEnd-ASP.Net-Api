@@ -3,7 +3,7 @@
   <PropertyGroup Label="Globals">
     <ProjectVersion>2.1</ProjectVersion>
     <DockerTargetOS>Linux</DockerTargetOS>
-    <ProjectGuid>41616780-db0c-406b-a2f9-2e47fc66ef58</ProjectGuid>
+    <ProjectGuid>7320dc3b-d5fd-497c-986d-a834a79ba223</ProjectGuid>
     <DockerLaunchAction>LaunchBrowser</DockerLaunchAction>
     <DockerServiceUrl>{Scheme}://localhost:{ServicePort}/swagger</DockerServiceUrl>
     <DockerServiceName>todoba</DockerServiceName>
