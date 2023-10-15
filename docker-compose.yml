@@ -1,0 +1,8 @@
+version: '3.4'
+
+services:
+  todoba:
+    image: ${DOCKER_REGISTRY-}todoba
+    build:
+      context: .
+      dockerfile: ToDoBA/Dockerfile
