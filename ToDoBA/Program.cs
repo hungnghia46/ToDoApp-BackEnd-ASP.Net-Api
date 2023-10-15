@@ -24,6 +24,8 @@ builder.Services.AddSingleton<IMongoClient, MongoClient>(s =>
     return new MongoClient(uri);
 }
 );
+var port = Environment.GetEnvironmentVariable("PORT") ?? "8081";
+builder.WebHost.UseUrls($"http://*:{port}");
 var app = builder.Build();
 
 // Configure the HTTP request pipeline.
@@ -34,7 +36,7 @@ app.UseSwaggerUI(c =>
     c.SwaggerEndpoint("/swagger/v1/swagger.json", "Swagger Todo Api");
     c.RoutePrefix = "";
 });
-
+app.UseHttpsRedirection();
 app.UseCors();
 app.UseHttpsRedirection();
 

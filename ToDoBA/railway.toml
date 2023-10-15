@@ -1,0 +1,7 @@
+[build]
+builder = "dockerfile"
+dockerfilePath = "./ToDoBA/Dockerfile"
+
+[deploy]
+startCommand = "dotnet ToDoBA.dll"
+restartPolicyType = "never"
